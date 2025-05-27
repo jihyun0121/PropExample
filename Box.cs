@@ -26,6 +26,16 @@ namespace PropExample
 
         public int getWidth() { return this.width; }
         public int getHeight() { return this.height; }
+        public void setWidth(int width)
+        {
+            if (width > 0) { this.width = width; }
+            else { Console.WriteLine("너비는 자연수로 입력해주세요"); }
+        }
+        public void setHeight(int width)
+        {
+            if (height > 0) { this.height = height; }
+            else { Console.WriteLine("높이는 자연수로 입력해주세요"); }
+        }
 
         public int Area()
         {
